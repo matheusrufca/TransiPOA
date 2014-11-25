@@ -13,9 +13,6 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.example.matheus.transipoa" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="a720aa4c-e260-45c2-8b2b-737127a45373" name="Default" comment="" />
     <ignored path="TransiPOA.iws" />
@@ -38,7 +35,51 @@
     <favorites_list name="TransiPOA" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="DataMining.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/DataMining.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.24199288" vertical-offset="0" max-vertical-offset="843">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#removeUselessTweets#0;class#DataMining#0" expanded="false" />
+                <element signature="method#containWordFromList#0;class#DataMining#0" expanded="false" />
+                <element signature="initializer##0;class#1021:1180" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwitterService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/TwitterService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="358" max-vertical-offset="1258">
+              <caret line="92" column="97" selection-start-line="92" selection-start-column="97" selection-end-line="92" selection-end-column="97" />
+              <folding>
+                <element signature="e#1123#1147#0" expanded="true" />
+                <element signature="method#twitterServiceFactory#0;class#TwitterService#0" expanded="false" />
+                <element signature="method#getTweetsResult#0;class#TwitterService#0" expanded="false" />
+                <element signature="method#clearResultList#0;class#TwitterService#0" expanded="false" />
+                <element signature="method#TwitterService#0;class#TwitterService#0" expanded="false" />
+                <element signature="method#twitterConnect#0;class#TwitterService#0" expanded="false" />
+                <element signature="e#2705#2729#0" expanded="true" />
+                <element signature="method#getTweets#1;class#TwitterService#0" expanded="false" />
+                <element signature="e#3178#3202#0" expanded="true" />
+                <element signature="method#getDumbTweets#0;class#TwitterService#0" expanded="false" />
+                <element signature="e#3449#3473#0" expanded="true" />
+                <element signature="method#convertTwitterStatus#0;class#TwitterService#0" expanded="false" />
+                <element signature="e#5399#5423#0" expanded="true" />
+                <element signature="method#sortTwitterStatusList#0;class#TwitterService#0" expanded="false" />
+                <element signature="method#doInBackground#0;class#TwitterService#0" expanded="false" />
+                <element signature="e#6105#6129#0" expanded="true" />
+                <element signature="method#onPostExecute#0;class#TwitterService#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -56,14 +97,14 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="TransiPOA_2" />
+              <option name="name" value="TransiPOA" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="TransiPOA_2" />
+                <option name="name" value="TransiPOA" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
@@ -1042,7 +1083,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="TransiPOA_2" />
+              <option name="name" value="TransiPOA" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.1-all/27drb4udbjf4k88eh2ffdc0n55/gradle-2.1/src/announce" />
@@ -1152,13 +1193,14 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/DateComparator.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/OnTaskCompleted.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/TwitterService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/TimeAgo.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/TwitterStatusViewModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/StatusAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/TwitterStatusViewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/TwitterService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/DataMining.java" />
       </list>
     </option>
   </component>
@@ -1194,20 +1236,86 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Problems">
+      <pane id="AndroidView">
+        <subPane>
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TransiPOA" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TransiPOA" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TransiPOA" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TransiPOA" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TransiPOA" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="transipoa" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TransiPOA" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1236,12 +1344,20 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="AndroidView">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Problems">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TransiPOA" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1260,12 +1376,8 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
-    <property name="android.project.structure.last.selected" value="app" />
-    <property name="android.project.structure.proportion" value="0.15" />
-    <property name="last_opened_file_path" value="D:/Downloads/twitter4j/lib/twitter4j-core-4.0.2.jar" />
     <property name="FullScreen" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
-    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="3_2_QVGA_ADP2_API_15" />
   </component>
   <component name="RecentsManager">
@@ -1468,11 +1580,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1485,8 +1598,9 @@
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30589545" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15138593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15138593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1495,10 +1609,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1553,12 +1665,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/TwitterService.java</url>
-          <line>82</line>
+          <line>98</line>
           <properties />
-          <option name="timeStamp" value="59" />
+          <option name="timeStamp" value="93" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="87" />
+      <option name="time" value="97" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1567,14 +1679,22 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="2159">
           <caret line="78" column="78" selection-start-line="78" selection-start-column="78" selection-end-line="78" selection-end-column="78" />
           <folding>
+            <element signature="e#1123#1147#0" expanded="true" />
             <element signature="method#twitterServiceFactory#0;class#TwitterService#0" expanded="false" />
+            <element signature="method#getTweetsResult#0;class#TwitterService#0" expanded="false" />
+            <element signature="method#clearResultList#0;class#TwitterService#0" expanded="false" />
             <element signature="method#TwitterService#0;class#TwitterService#0" expanded="false" />
             <element signature="method#twitterConnect#0;class#TwitterService#0" expanded="false" />
-            <element signature="method#getTweets#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#2705#2729#0" expanded="true" />
             <element signature="method#getTweets#1;class#TwitterService#0" expanded="false" />
-            <element signature="method#convertTwitterStatus#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#3178#3202#0" expanded="true" />
             <element signature="method#getDumbTweets#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#3449#3473#0" expanded="true" />
+            <element signature="method#convertTwitterStatus#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#5399#5423#0" expanded="true" />
+            <element signature="method#sortTwitterStatusList#0;class#TwitterService#0" expanded="false" />
             <element signature="method#doInBackground#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#6105#6129#0" expanded="true" />
             <element signature="method#onPostExecute#0;class#TwitterService#0" expanded="false" />
           </folding>
         </state>
@@ -1594,26 +1714,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/DateComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="289">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1394">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onStart#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onClickBtn#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#refreshListAsync#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#1964#1988#0" expanded="true" />
+            <element signature="e#1992#2016#0" expanded="true" />
             <element signature="method#cleanList#0;class#MainActivity#0" expanded="false" />
             <element signature="method#setListFromSource#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onTaskCompleted#0;class#MainActivity#0" expanded="false" />
@@ -1626,14 +1736,22 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2159">
           <caret line="78" column="78" selection-start-line="78" selection-start-column="78" selection-end-line="78" selection-end-column="78" />
           <folding>
+            <element signature="e#1123#1147#0" expanded="true" />
             <element signature="method#twitterServiceFactory#0;class#TwitterService#0" expanded="false" />
+            <element signature="method#getTweetsResult#0;class#TwitterService#0" expanded="false" />
+            <element signature="method#clearResultList#0;class#TwitterService#0" expanded="false" />
             <element signature="method#TwitterService#0;class#TwitterService#0" expanded="false" />
             <element signature="method#twitterConnect#0;class#TwitterService#0" expanded="false" />
-            <element signature="method#getTweets#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#2705#2729#0" expanded="true" />
             <element signature="method#getTweets#1;class#TwitterService#0" expanded="false" />
-            <element signature="method#convertTwitterStatus#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#3178#3202#0" expanded="true" />
             <element signature="method#getDumbTweets#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#3449#3473#0" expanded="true" />
+            <element signature="method#convertTwitterStatus#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#5399#5423#0" expanded="true" />
+            <element signature="method#sortTwitterStatusList#0;class#TwitterService#0" expanded="false" />
             <element signature="method#doInBackground#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#6105#6129#0" expanded="true" />
             <element signature="method#onPostExecute#0;class#TwitterService#0" expanded="false" />
           </folding>
         </state>
@@ -1653,26 +1771,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/DateComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="289">
-          <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1394">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onStart#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onClickBtn#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#refreshListAsync#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#1964#1988#0" expanded="true" />
+            <element signature="e#1992#2016#0" expanded="true" />
             <element signature="method#cleanList#0;class#MainActivity#0" expanded="false" />
             <element signature="method#setListFromSource#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onTaskCompleted#0;class#MainActivity#0" expanded="false" />
@@ -1685,14 +1793,22 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2159">
           <caret line="78" column="78" selection-start-line="78" selection-start-column="78" selection-end-line="78" selection-end-column="78" />
           <folding>
+            <element signature="e#1123#1147#0" expanded="true" />
             <element signature="method#twitterServiceFactory#0;class#TwitterService#0" expanded="false" />
+            <element signature="method#getTweetsResult#0;class#TwitterService#0" expanded="false" />
+            <element signature="method#clearResultList#0;class#TwitterService#0" expanded="false" />
             <element signature="method#TwitterService#0;class#TwitterService#0" expanded="false" />
             <element signature="method#twitterConnect#0;class#TwitterService#0" expanded="false" />
-            <element signature="method#getTweets#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#2705#2729#0" expanded="true" />
             <element signature="method#getTweets#1;class#TwitterService#0" expanded="false" />
-            <element signature="method#convertTwitterStatus#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#3178#3202#0" expanded="true" />
             <element signature="method#getDumbTweets#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#3449#3473#0" expanded="true" />
+            <element signature="method#convertTwitterStatus#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#5399#5423#0" expanded="true" />
+            <element signature="method#sortTwitterStatusList#0;class#TwitterService#0" expanded="false" />
             <element signature="method#doInBackground#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#6105#6129#0" expanded="true" />
             <element signature="method#onPostExecute#0;class#TwitterService#0" expanded="false" />
           </folding>
         </state>
@@ -1712,26 +1828,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/DateComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="289">
-          <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1394">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onStart#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onClickBtn#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#refreshListAsync#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#1964#1988#0" expanded="true" />
+            <element signature="e#1992#2016#0" expanded="true" />
             <element signature="method#cleanList#0;class#MainActivity#0" expanded="false" />
             <element signature="method#setListFromSource#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onTaskCompleted#0;class#MainActivity#0" expanded="false" />
@@ -1744,14 +1850,22 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="1904">
           <caret line="63" column="44" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="44" />
           <folding>
+            <element signature="e#1123#1147#0" expanded="true" />
             <element signature="method#twitterServiceFactory#0;class#TwitterService#0" expanded="false" />
+            <element signature="method#getTweetsResult#0;class#TwitterService#0" expanded="false" />
+            <element signature="method#clearResultList#0;class#TwitterService#0" expanded="false" />
             <element signature="method#TwitterService#0;class#TwitterService#0" expanded="false" />
             <element signature="method#twitterConnect#0;class#TwitterService#0" expanded="false" />
-            <element signature="method#getTweets#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#2705#2729#0" expanded="true" />
             <element signature="method#getTweets#1;class#TwitterService#0" expanded="false" />
-            <element signature="method#convertTwitterStatus#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#3178#3202#0" expanded="true" />
             <element signature="method#getDumbTweets#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#3449#3473#0" expanded="true" />
+            <element signature="method#convertTwitterStatus#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#5399#5423#0" expanded="true" />
+            <element signature="method#sortTwitterStatusList#0;class#TwitterService#0" expanded="false" />
             <element signature="method#doInBackground#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#6105#6129#0" expanded="true" />
             <element signature="method#onPostExecute#0;class#TwitterService#0" expanded="false" />
           </folding>
         </state>
@@ -1763,13 +1877,10 @@
           <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onStart#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onClickBtn#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#refreshListAsync#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#1964#1988#0" expanded="true" />
+            <element signature="e#1992#2016#0" expanded="true" />
             <element signature="method#cleanList#0;class#MainActivity#0" expanded="false" />
             <element signature="method#setListFromSource#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onTaskCompleted#0;class#MainActivity#0" expanded="false" />
@@ -1790,13 +1901,10 @@
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onStart#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onClickBtn#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#refreshListAsync#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#1964#1988#0" expanded="true" />
+            <element signature="e#1992#2016#0" expanded="true" />
             <element signature="method#cleanList#0;class#MainActivity#0" expanded="false" />
             <element signature="method#setListFromSource#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onTaskCompleted#0;class#MainActivity#0" expanded="false" />
@@ -1826,13 +1934,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/MainActivity.java">
@@ -1841,13 +1949,10 @@
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onStart#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onClickBtn#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#refreshListAsync#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#1964#1988#0" expanded="true" />
+            <element signature="e#1992#2016#0" expanded="true" />
             <element signature="method#cleanList#0;class#MainActivity#0" expanded="false" />
             <element signature="method#setListFromSource#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onTaskCompleted#0;class#MainActivity#0" expanded="false" />
@@ -1856,13 +1961,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/MainActivity.java">
@@ -1871,13 +1976,10 @@
           <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onStart#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onClickBtn#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#refreshListAsync#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#1964#1988#0" expanded="true" />
+            <element signature="e#1992#2016#0" expanded="true" />
             <element signature="method#cleanList#0;class#MainActivity#0" expanded="false" />
             <element signature="method#setListFromSource#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onTaskCompleted#0;class#MainActivity#0" expanded="false" />
@@ -1886,13 +1988,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/MainActivity.java">
@@ -1901,13 +2003,10 @@
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onStart#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onClickBtn#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#refreshListAsync#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#1964#1988#0" expanded="true" />
+            <element signature="e#1992#2016#0" expanded="true" />
             <element signature="method#cleanList#0;class#MainActivity#0" expanded="false" />
             <element signature="method#setListFromSource#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onTaskCompleted#0;class#MainActivity#0" expanded="false" />
@@ -1916,13 +2015,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/example/matheus/transipoa/ApplicationTest.java">
@@ -2003,13 +2102,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/DateComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36523438" vertical-offset="0" max-vertical-offset="512">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/OnTaskCompleted.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19921875" vertical-offset="0" max-vertical-offset="512">
@@ -2031,55 +2123,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75" vertical-offset="248" max-vertical-offset="816">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onStart#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onClickBtn#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#refreshListAsync#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#1964#1988#0" expanded="true" />
-            <element signature="method#cleanList#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#setListFromSource#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onTaskCompleted#0;class#MainActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/TwitterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="511" max-vertical-offset="1411">
-          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-          <folding>
-            <element signature="method#twitterServiceFactory#0;class#TwitterService#0" expanded="false" />
-            <element signature="method#TwitterService#0;class#TwitterService#0" expanded="false" />
-            <element signature="method#twitterConnect#0;class#TwitterService#0" expanded="false" />
-            <element signature="method#getTweets#0;class#TwitterService#0" expanded="false" />
-            <element signature="method#getTweets#1;class#TwitterService#0" expanded="false" />
-            <element signature="method#convertTwitterStatus#0;class#TwitterService#0" expanded="false" />
-            <element signature="method#getDumbTweets#0;class#TwitterService#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#TwitterService#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#TwitterService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/TimeAgo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/TwitterStatusViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -2091,24 +2138,93 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1139">
           <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/TwitterStatusViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="method#getDateTimestamp#0;class#TwitterStatusViewModel#0" expanded="false" />
+            <element signature="method#getTimeAgo#0;class#TwitterStatusViewModel#0" expanded="false" />
+            <element signature="method#TwitterStatusViewModel#0;class#TwitterStatusViewModel#0" expanded="false" />
+            <element signature="method#TwitterStatusViewModel#1;class#TwitterStatusViewModel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49804688" vertical-offset="153" max-vertical-offset="1258">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onClickBtn#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#1992#2016#0" expanded="true" />
+            <element signature="method#cleanList#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setListFromSource#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onTaskCompleted#0;class#MainActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/TwitterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="358" max-vertical-offset="1258">
+          <caret line="92" column="97" selection-start-line="92" selection-start-column="97" selection-end-line="92" selection-end-column="97" />
+          <folding>
+            <element signature="e#1123#1147#0" expanded="true" />
+            <element signature="method#twitterServiceFactory#0;class#TwitterService#0" expanded="false" />
+            <element signature="method#getTweetsResult#0;class#TwitterService#0" expanded="false" />
+            <element signature="method#clearResultList#0;class#TwitterService#0" expanded="false" />
+            <element signature="method#TwitterService#0;class#TwitterService#0" expanded="false" />
+            <element signature="method#twitterConnect#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#2705#2729#0" expanded="true" />
+            <element signature="method#getTweets#1;class#TwitterService#0" expanded="false" />
+            <element signature="e#3178#3202#0" expanded="true" />
+            <element signature="method#getDumbTweets#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#3449#3473#0" expanded="true" />
+            <element signature="method#convertTwitterStatus#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#5399#5423#0" expanded="true" />
+            <element signature="method#sortTwitterStatusList#0;class#TwitterService#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#TwitterService#0" expanded="false" />
+            <element signature="e#6105#6129#0" expanded="true" />
+            <element signature="method#onPostExecute#0;class#TwitterService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/matheus/transipoa/DataMining.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24199288" vertical-offset="0" max-vertical-offset="843">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#removeUselessTweets#0;class#DataMining#0" expanded="false" />
+            <element signature="method#containWordFromList#0;class#DataMining#0" expanded="false" />
+            <element signature="initializer##0;class#1021:1180" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

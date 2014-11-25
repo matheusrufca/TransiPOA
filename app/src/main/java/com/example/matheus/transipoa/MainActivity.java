@@ -15,11 +15,12 @@ public class MainActivity extends Activity implements OnTaskCompleted {
 	private StatusAdapter listAdapter;
 	private TwitterService twitterService;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-	    setContentView(R.layout.activity_main);
-    }
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+	}
 
 	@Override
 	protected void onStart() {
@@ -32,27 +33,27 @@ public class MainActivity extends Activity implements OnTaskCompleted {
 		refreshListAsync();
 	}
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.menu_main, menu);
+		return true;
+	}
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+		//noinspection SimplifiableIfStatement
+		if (id == R.id.action_settings) {
+			return true;
+		}
 
-        return super.onOptionsItemSelected(item);
-    }
+		return super.onOptionsItemSelected(item);
+	}
 
 
 	public void onClickBtn(View v) {
@@ -66,27 +67,26 @@ public class MainActivity extends Activity implements OnTaskCompleted {
 	}
 
 
-	private void refreshListAsync(){
-		this.twitterService = TwitterService.twitterServiceFactory(this);
-		List<TwitterStatusViewModel> tweets = new ArrayList<TwitterStatusViewModel>();
+	private void refreshListAsync() {
+		List<String> usernames = Arrays.asList("radarblitzpoa", "EPTC_POA", "transitozh");
 
-		try {
-			List<String> usernames = Arrays.asList("EPTC_POA","transitozh");
+		for (String username : usernames) {
+			try {
+				this.twitterService = TwitterService.twitterServiceFactory(this);
+				List<TwitterStatusViewModel> tweets = new ArrayList<TwitterStatusViewModel>();
 
-			/* executa tarefa async */
-			this.twitterService.execute(usernames);
-
-			/* obtém resultado da tarefa */
-			//tweets = twitterService.get();
-
-			/* põe os tweets na view */
-			//setListFromSource(tweets);
-		} catch (Exception e) {
-			showToast("Ocorreu um erro, tente novamente");
+				/* executa tarefa async */
+				this.twitterService.execute(username);
+			} catch (Exception e) {
+				showToast("Ocorreu ao obter tweets de @" + username);
+			}
 		}
 	}
 
-	private void cleanList(){
+	private void cleanList() {
+		/* limpa a lista de resultados */
+		TwitterService.clearResultList();
+
 		/* limpa a lista do adapter */
 		this.listAdapter.clear();
 
@@ -97,7 +97,7 @@ public class MainActivity extends Activity implements OnTaskCompleted {
 		//setListFromSource(new ArrayList<TwitterStatusViewModel>());
 	}
 
-	private void showToast(String message){
+	private void showToast(String message) {
 		Toast.makeText(this, message, Toast.LENGTH_LONG).show();
 	}
 
@@ -108,7 +108,7 @@ public class MainActivity extends Activity implements OnTaskCompleted {
 	}
 
 	public void onTaskCompleted() {
-		List<TwitterStatusViewModel> tweets = this.twitterService.getTweetsResult();
+		List<TwitterStatusViewModel> tweets = TwitterService.getTweetsResult();
 		setListFromSource(tweets);
 	}
 }

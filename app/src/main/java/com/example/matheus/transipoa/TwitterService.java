@@ -6,6 +6,7 @@ import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import twitter4j.ResponseList;
@@ -19,7 +20,7 @@ import twitter4j.conf.ConfigurationBuilder;
 /**
  * Created by Matheus on 03/11/2014.
  */
-public class TwitterService extends AsyncTask<List<String>, Integer, List<TwitterStatusViewModel>> {
+public class TwitterService extends AsyncTask<String, Integer, List<TwitterStatusViewModel>> {
 	// twitter consumer key and secret
 	static String TWITTER_CONSUMER_KEY = "UmMKW0XRJyIfr3rlhkxQF6dIF";
 	static String TWITTER_CONSUMER_SECRET = "sE5lZaMqDwhOERHvJAHD2Bcj4JLwNr5PuHQEXNMHDugxFCNLwj";
@@ -32,10 +33,25 @@ public class TwitterService extends AsyncTask<List<String>, Integer, List<Twitte
 	OnTaskCompleted listener;
 	Twitter twitterService;
 	OAuth2Token oAuth2Token;
-	List<TwitterStatusViewModel> tweetsResult = new ArrayList<TwitterStatusViewModel>();
 
-	public static TwitterService twitterServiceFactory(OnTaskCompleted listener){
+	static List<TwitterStatusViewModel> tweetsResult = new ArrayList<TwitterStatusViewModel>();
+
+	public static TwitterService twitterServiceFactory(OnTaskCompleted listener) {
+		if (tweetsResult == null)
+			tweetsResult = new ArrayList<TwitterStatusViewModel>();
+
 		return new TwitterService(listener);
+	}
+
+	public static List<TwitterStatusViewModel> getTweetsResult() {
+		sortTwitterStatusList(tweetsResult);
+
+		return tweetsResult;
+	}
+
+	public static void clearResultList() {
+		if (tweetsResult != null)
+			tweetsResult.clear();
 	}
 
 
@@ -47,12 +63,12 @@ public class TwitterService extends AsyncTask<List<String>, Integer, List<Twitte
 
 		try {
 			this.twitterService = this.twitterConnect(TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET);
-		}catch (Exception ex) {
+		} catch (Exception ex) {
 			Log.i("Info", ex.getMessage());
 		}
 	}
 
-	public Twitter twitterConnect(String twitter_consumer_key, String twitter_consumer_secret)throws Exception{
+	public Twitter twitterConnect(String twitter_consumer_key, String twitter_consumer_secret) throws Exception {
 		ConfigurationBuilder builder;
 
 		try {
@@ -72,81 +88,81 @@ public class TwitterService extends AsyncTask<List<String>, Integer, List<Twitte
 		return twitterService;
 	}
 
-	public List<TwitterStatusViewModel> getTweets(String username){
+
+	public List<TwitterStatusViewModel> getTweets(String username) {
 		List<TwitterStatusViewModel> twitterStatusList = new ArrayList<TwitterStatusViewModel>();
 
 		try {
 			ResponseList<twitter4j.Status> statuses = this.twitterService.getUserTimeline(username);
 			twitterStatusList = convertTwitterStatus(statuses);
-		}
-		catch (Exception ex) {
+			DataMining.removeUselessTweets(twitterStatusList);
+		} catch (Exception ex) {
 			Log.i("Info", ex.getMessage());
 		}
-		this.tweetsResult = twitterStatusList;
-
 		return twitterStatusList;
 	}
 
-	public List<TwitterStatusViewModel> getTweets(List<String> usernames){
+	public List<TwitterStatusViewModel> getTweets(List<String> usernames) {
 		List<TwitterStatusViewModel> twitterStatusList = new ArrayList<TwitterStatusViewModel>();
 
-		for(String username : usernames){
+		for (String username : usernames) {
 			twitterStatusList.addAll(this.getTweets(username));
 		}
 
-		/* ordena os tweets por data */
-		//Collections.sort(twitterStatusList, new DateComparator());
-
 		return twitterStatusList;
 	}
+
+	public List<TwitterStatusViewModel> getDumbTweets() {
+		ArrayList<TwitterStatusViewModel> items = new ArrayList<TwitterStatusViewModel>();
+
+		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu", "@EPTC", "10:29:34 10/10/1990", "https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
+		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu", "@EPTC", "10:29:34 10/10/1990", "https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
+		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu", "@EPTC", "10:29:34 10/10/1990", "https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
+		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu", "@EPTC", "10:29:34 10/10/1990", "https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
+		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu", "@EPTC", "10:29:34 10/10/1990", "https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
+		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu", "@EPTC", "10:29:34 10/10/1990", "https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
+		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu", "@EPTC", "10:29:34 10/10/1990", "https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
+		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu", "@EPTC", "10:29:34 10/10/1990", "https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
+		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu", "@EPTC", "10:29:34 10/10/1990", "https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
+
+		return items;
+	}
+
 
 	private List<TwitterStatusViewModel> convertTwitterStatus(ResponseList<twitter4j.Status> statuses) {
 		ArrayList<TwitterStatusViewModel> twitterStatusList = new ArrayList<TwitterStatusViewModel>();
 
-		if(statuses == null || statuses.isEmpty())
+		if (statuses == null || statuses.isEmpty())
 			return twitterStatusList;
 
-		for(twitter4j.Status s: statuses) {
+		for (twitter4j.Status s : statuses) {
 			twitterStatusList.add(new TwitterStatusViewModel(s));
 		}
 		return twitterStatusList;
 	}
 
-	public List<TwitterStatusViewModel> getDumbTweets(){
-		ArrayList<TwitterStatusViewModel> items = new ArrayList<TwitterStatusViewModel>();
-
-		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu","@EPTC", "10:29:34 10/10/1990","https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
-		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu","@EPTC", "10:29:34 10/10/1990","https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
-		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu","@EPTC", "10:29:34 10/10/1990","https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
-		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu","@EPTC", "10:29:34 10/10/1990","https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
-		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu","@EPTC", "10:29:34 10/10/1990","https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
-		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu","@EPTC", "10:29:34 10/10/1990","https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
-		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu","@EPTC", "10:29:34 10/10/1990","https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
-		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu","@EPTC", "10:29:34 10/10/1990","https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
-		items.add(new TwitterStatusViewModel("Caiu um trem queda abaixo ó meu deus do céu","@EPTC", "10:29:34 10/10/1990","https://pbs.twimg.com/profile_images/568363261/logo_EPTC_400x400.jpg"));
-
-		return items;
+	private static void sortTwitterStatusList(List<TwitterStatusViewModel> tweets) {
+		Collections.sort(tweets, Collections.reverseOrder(new Comparator<TwitterStatusViewModel>() {
+			public int compare(TwitterStatusViewModel obj1, TwitterStatusViewModel obj2) {
+				return obj1.getDate().compareTo(obj2.getDate());
+			}
+		}));
 	}
 
-	public List<TwitterStatusViewModel> getTweetsResult(){
-		return this.tweetsResult;
-	}
 
 	@Override
-	protected List<TwitterStatusViewModel> doInBackground(List<String>... params) {
-		List<String> usernames = new ArrayList<String>();
+	protected List<TwitterStatusViewModel> doInBackground(String... params) {
 		List<TwitterStatusViewModel> tweets = new ArrayList<TwitterStatusViewModel>();
 
-		if(params == null && params.length > 0)
+		if (params == null && params.length > 0)
 			return tweets;
 
-		usernames  = params[0];
+		String username = params[0];
 
 		try {
 			Thread.sleep(200);
-			tweets = this.getTweets(usernames);
-			//tweets = this.getDumbTweets(usernames);
-			this.tweetsResult = tweets;
+			tweets = this.getTweets(username);
+			tweetsResult.addAll(tweets);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -156,7 +172,7 @@ public class TwitterService extends AsyncTask<List<String>, Integer, List<Twitte
 	}
 
 	@Override
-	protected void onPostExecute(List<TwitterStatusViewModel> list){
+	protected void onPostExecute(List<TwitterStatusViewModel> list) {
 		if (listener != null)
 			listener.onTaskCompleted();
 	}
