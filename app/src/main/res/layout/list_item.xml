@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+
+    <ImageView
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:id="@+id/iv_author_pic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/tv_status"
+        android:layout_alignTop="@+id/iv_author_pic"
+        android:layout_toRightOf="@+id/iv_author_pic"
+        android:layout_toEndOf="@+id/iv_author_pic"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:textColorLink="#428bca"
+        android:textColor="#666666"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tv_author"
+        android:layout_toEndOf="@+id/iv_author_pic"
+        android:layout_below="@+id/tv_status"
+        android:layout_alignLeft="@+id/tv_status"
+        android:layout_alignStart="@+id/tv_status"
+        android:textColor="#999999"
+        android:layout_toLeftOf="@+id/tv_date"
+        android:layout_toStartOf="@+id/tv_date"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tv_date"
+        android:layout_alignTop="@+id/tv_author"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tv_status"
+        android:textColor="#999999"
+        android:singleLine="true"/>
+</RelativeLayout>
